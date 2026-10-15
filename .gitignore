@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# Tooling caches and coverage output
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local data
+/real_invoices/
+
+# Local data and databases
+data/
+*.db
+*.db-shm
+*.db-wal
+.env.*
+!.env.example

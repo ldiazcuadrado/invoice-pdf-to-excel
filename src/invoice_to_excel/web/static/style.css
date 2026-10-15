@@ -1,0 +1,42 @@
+:root {
+  --accent: #1f4e78;
+  --border: #d0d7de;
+  --review: #ffc7ce;
+  --low: #ffd966;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f2328;
+}
+body { margin: 0; background: #f6f8fa; }
+header { background: var(--accent); color: #fff; padding: 1.2rem 2rem; }
+header h1 { margin: 0 0 .2rem; font-size: 1.4rem; }
+header p { margin: 0; opacity: .85; }
+main { max-width: 1200px; margin: 1.5rem auto; padding: 0 1rem; }
+footer { text-align: center; color: #57606a; font-size: .85rem; padding: 2rem 1rem; }
+h2 { font-size: 1.05rem; margin: 1.6rem 0 .5rem; }
+#dropzone {
+  border: 2px dashed var(--border); border-radius: 8px; background: #fff;
+  padding: 2.2rem 1rem; text-align: center; cursor: pointer;
+}
+#dropzone.active, #dropzone:focus { border-color: var(--accent); outline: none; background: #eef4fa; }
+#dropzone p { margin: .2rem 0; }
+.hint { color: #57606a; font-size: .85rem; }
+.notice { background: #fff8c5; border: 1px solid #d4a72c; border-radius: 6px; padding: .7rem 1rem; margin-bottom: 1rem; }
+.notice.error { background: #ffebe9; border-color: #cf222e; }
+#progress { margin: 1rem 0; display: flex; align-items: center; gap: .8rem; }
+progress { flex: 1; height: 14px; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+button {
+  background: var(--accent); color: #fff; border: 0; border-radius: 6px;
+  padding: .5rem .9rem; font: inherit; cursor: pointer;
+}
+button.secondary { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+button:disabled { opacity: .5; cursor: default; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; background: #fff; font-size: .88rem; }
+th, td { border: 1px solid var(--border); padding: .35rem .55rem; text-align: left; white-space: nowrap; }
+th { background: var(--accent); color: #fff; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.notes { white-space: normal; min-width: 260px; }
+tr.review td { background: var(--review); }
+td.low { background: var(--low) !important; }
+tr.flag td { background: #ffeb9c; }

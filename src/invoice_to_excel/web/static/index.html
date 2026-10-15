@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice PDF to Excel</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Invoice PDF to Excel</h1>
+    <p>Upload Spanish PDF invoices and download a checked Excel or CSV report.</p>
+  </header>
+
+  <main>
+    <div id="notice" class="notice" hidden></div>
+
+    <section id="dropzone" tabindex="0" role="button" aria-label="Choose PDF invoices">
+      <p><strong>Drop PDF invoices here</strong> or click to choose files</p>
+      <p class="hint" id="limits"></p>
+      <input id="file-input" type="file" accept="application/pdf,.pdf" multiple hidden>
+    </section>
+
+    <section id="progress" hidden>
+      <progress id="progress-bar" value="0" max="1"></progress>
+      <span id="progress-text"></span>
+    </section>
+
+    <section id="results" hidden>
+      <div class="toolbar">
+        <h2>Invoices</h2>
+        <div>
+          <button id="download-xlsx" type="button">Download Excel</button>
+          <button id="download-csv" type="button">Download CSV</button>
+          <button id="reset" type="button" class="secondary">Clear</button>
+        </div>
+      </div>
+      <p class="hint">Red rows need review. Amber cells have low confidence.</p>
+      <div class="scroll"><table id="invoices-table"></table></div>
+
+      <div id="issues-block" hidden>
+        <h2>Files that could not be read</h2>
+        <table id="issues-table"></table>
+      </div>
+
+      <h2>Input VAT by quarter (modelo 303)</h2>
+      <div class="scroll"><table id="vat-table"></table></div>
+
+      <h2>Annual totals by supplier (modelo 347)</h2>
+      <div class="scroll"><table id="suppliers-table"></table></div>
+    </section>
+  </main>
+
+  <footer>
+    Files are processed in a temporary folder and deleted immediately. Nothing is stored on the server.
+  </footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

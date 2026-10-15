@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    image: invoice-pdf-to-excel:0.1.0
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped

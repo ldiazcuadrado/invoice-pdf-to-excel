@@ -1,0 +1,19 @@
+﻿Supplier,Tax ID,Invoice no.,Date,Net amount,VAT %,VAT amount,Equivalence surcharge,Withholding (IRPF),Total,Confidence,Extraction,Source file,Status,Notes
+"Suministros Ficticios, S.L.",B87654323,2026-001,2026-01-15,252.60,21%,53.05,,,305.65,0.91,rules,supplies_2026-001.pdf,OK,
+"Suministros Ficticios, S.L.",B87654323,2026-014,2026-02-14,570.00,21%,119.70,,,689.70,0.91,rules,supplies_2026-014.pdf,OK,
+"Suministros Ficticios, S.L.",B87654323,2026-014,2026-02-14,570.00,21%,119.70,,,689.70,0.91,rules,supplies_2026-014_copy.pdf,Review,Possible duplicate invoice (same as supplies_2026-014.pdf)
+"Reformas Escaneadas, S.L.",B55443329,R-2026-05,2026-03-02,3440.00,21%,722.40,,,4162.40,0.83,rules + OCR,renovations_scanned.pdf,OK,
+Marta Ficticia Ruiz,12345678Z,F-2026/003,2026-03-15,1650.00,21%,346.50,,247.50,1749.00,0.85,rules,marta_design_03.pdf,OK,
+"Suministros Ficticios, S.L.",B87654323,2026-027,2026-03-30,460.00,21%,96.60,,,556.60,0.91,rules,supplies_2026-027.pdf,OK,
+"Papelería Imaginaria, S.A.",A24681355,2026/0031,2026-04-03,400.20,4%,16.01,,,416.21,0.91,rules,stationery_F0031.pdf,OK,
+"Suministros Ficticios, S.L.",B87654323,2026-031,2026-04-09,396.00,21%,83.16,,,489.16,0.59,rules,supplies_2026-031.pdf,Review,"Total does not add up: net + VAT - IRPF = 479.16, the invoice states 489.16 (difference +10.00)"
+"Talleres Inventados, S.L.",B13579248,A-1042,2026-04-28,1150.00,21%,241.50,,,1391.50,0.91,rules,workshop_A-1042.pdf,OK,
+"Consultoría Falsa, S.L.P.",B99887762,C-2026/012,2026-05-08,1710.00,21%,359.10,,119.70,1949.40,0.91,rules,consulting_2026-12.pdf,OK,
+"Papelería Imaginaria, S.A.",A24681355,2026/0058,2026-05-20,1285.90,10%,128.59,,,1414.49,0.91,rules,stationery_F0058.pdf,OK,
+Marta Ficticia Ruiz,12345678Z,F-2026/007,2026-06-05,2300.00,21%,483.00,,345.00,2438.00,0.85,rules,marta_design_07.pdf,OK,
+"Talleres Inventados, S.L.",B13579248,A-1077,2026-06-12,1860.50,21%,390.71,,,2251.21,0.91,rules,workshop_A-1077.pdf,OK,
+"Papelería Imaginaria, S.A.",A24681355,2026/0077,2026-07-09,1269.00,21% + 10% + 4%,119.70,,,1388.70,0.91,rules,stationery_F0077_multi.pdf,OK,
+"Ferretería Ficticia, S.L.",B22334452,F-2026-0118,2026-07-21,698.00,21% + 10%,100.38,,,798.38,0.91,rules,hardware_F-2026-0118.pdf,OK,
+"Distribuciones Imaginarias, S.A.",A31415920,B-5521,2026-08-17,722.00,21% + 10%,104.10,21.13,,847.23,0.91,rules,wholesale_B-5521.pdf,OK,
+"Distribuciones Imaginarias, S.A.",A31415920,B-5598,2026-09-18,342.00,21%,71.82,17.78,,431.60,0.91,rules,wholesale_B-5598.pdf,OK,
+"Ferretería Ficticia, S.L.",B22334452,F-2026-0204,2026-10-05,1106.00,21% + 10%,124.46,,,1230.46,0.91,rules,hardware_F-2026-0204.pdf,OK,
